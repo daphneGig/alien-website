@@ -1,0 +1,676 @@
+/********* Inizio CSS reset *********/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/********* Fine CSS reset *********/
+/********* Barra scorrimento pagina *********/
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  /* colore sfondo */ 
+  ::-webkit-scrollbar-track {
+	background: #101418; 
+  }
+  /* colore barretta */
+  ::-webkit-scrollbar-thumb {
+	background: #73FF70;
+	border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+	background: #BBFF70;
+  }
+/********* Typography *********/
+body {
+    font-family: 'Poppins',sans-serif;
+    color:#FAFFF4;
+    background-color: #080A0C;
+}
+h1 {
+    font-weight: 700;
+    font-size: 64px;
+    letter-spacing: 35px;
+    text-transform:uppercase;
+    margin-bottom: 30px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: -1px;
+	margin-bottom: 15px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+    color: #BBFF70;
+	margin-bottom: 15px;
+}
+.subtitle {
+    font-weight: 300;
+    font-size: 24px;
+    color: #FFFB70;
+    margin-bottom: 15px;
+}
+.pretitle {
+    font-weight: 300;
+    font-size: 16px;
+    color: #73FF70;
+    text-transform:uppercase;
+	margin-bottom: 10px;
+}
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+	margin-bottom: 10px;
+}
+li {
+	font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+}
+.li-secondary {
+	margin-left: 17px; 
+	list-style: square;
+}
+.strong-text {
+    font-weight: 600;
+}
+.small-text {
+    font-weight: 400;
+    font-size: 12px;
+}
+.italic-text {
+	font-style: italic;
+}
+a {
+    color: #FFFB70;
+	transition: all 200ms ease-in-out;
+}
+a:hover{
+    color:#BBFF70;}
+/********* Barra di navigazione *********/
+.wrapper-nav {
+	height: 60px;
+    width: 100%;
+    background-color: #101418;
+}
+.container-nav {
+	height: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#voci-nav {
+    width: 40%;
+}
+#voci-nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+#voci-nav ul li {
+    display: inline;
+}
+#voci-nav ul li a {
+    font-weight: 600;
+    color:#FAFFF4;
+    text-decoration: none;
+	transition: all 300ms ease-in-out;
+}
+#voci-nav ul li a:hover {
+    color:#BBFF70 !important;
+}
+#pagina-nav {
+    color:#73FF70 !important;
+}
+@media screen and (min-width:1500px) {
+	.container-nav {
+		margin-left: 120px;
+    	margin-right: 120px;
+	}
+}
+/********* Footer *********/
+#wrapper-footer {
+	margin-top: 100px;
+	width: 100%;
+    background-color: #101418;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+#container-footer {
+	margin-left: 60px;
+    margin-right: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+}
+@media screen and (min-width:1500px) {
+	#container-footer {
+		margin-left: 120px;
+    	margin-right: 120px;
+	}
+}
+footer .subtitle {
+	color: #FAFFF4;
+}
+#contatti-footer {
+	width: 33%;
+}
+#social-footer {
+	width: 20%;
+}
+#siti-collegati-footer {
+	width: 20%;
+}
+footer .text-center {
+	margin-top: 30px;
+}
+/********* Classi valide per più pagine *********/
+/*** Section ***/
+.container-section-center {
+    width: 67%;
+	margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center;
+}
+.container-section {
+	margin-top: 100px;
+	margin-left: 60px;
+    margin-right: 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.container-section-noflex {
+	margin-top: 100px;
+	margin-left: 60px;
+    margin-right: 60px;
+}
+@media screen and (min-width:1500px) {
+	.container-section-center {
+        width: 58%;
+    }
+	.container-section {
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+	.container-section-noflex {
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+}
+.section-space-around {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+	align-items: center;
+}
+.container-hover-image:hover h3 {
+    color:#BBFF70 !important;
+}
+.section-space-around a {
+    text-decoration: none;
+}
+.section-space-around h3{
+    color: #FAFFF4;
+    position: relative;
+    bottom: 50px;
+    z-index: 10;
+    text-align: center;
+}
+.margin-top-50 {
+	margin-top: 50px !important;
+}
+.width-1-col {
+	width: 10%;
+}
+.width-2-col {
+	width: 25%;
+}
+.width-3-col {
+	width: 25%;
+}
+.width-4-col {
+	width: 33%;
+}
+.width-5-col {
+	width: 42%;
+}
+.width-6-col {
+	width: 50%;
+}
+.width-7-col {
+	width: 58%;
+}
+/*** Immagini ***/
+.image-center {
+	margin-left: auto;
+  	margin-right: auto;
+	display: block;
+}
+/*** Effetto hover immagini e icone ***/
+.container-hover-image {
+	color: #BBFF70;
+}
+.hover-image {
+	opacity: 1;
+	display: block;
+	transition: .7s ease;
+	backface-visibility: hidden;
+}
+.text-hover {
+	transition: .5s ease;
+	opacity: 0;
+	transform: translate(0%, -1000%);
+	-ms-transform: translate(0%, -1000%);
+	text-align: center;
+}
+.container-hover-image:hover .hover-image {
+ 	opacity: 0.3;
+}
+.container-section-ilfilm .container-hover-image:hover .hover-image {
+ 	opacity: 0.15;
+}
+.container-hover-image:hover .text-hover {
+ 	opacity: 1;
+}
+/*** Button ***/
+.button {
+	margin-top: 15px;
+	margin-right: 2%;
+	width: 30%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-weight: 600;
+    font-size: 16px;
+	color: #080A0C;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #73FF70;
+	border: 2px solid #73FF70;
+	border-radius: 8px;
+	transition: all 0.4s ease 0s;
+	display: inline-block;
+}
+.button:last-child {
+	margin-right: 0px;
+}
+.button:hover {
+	color: #73FF70;
+	text-decoration: underline;
+	background-color: #080A0C;
+	transition: all 0.4s ease 0s;
+}
+.long-button {
+	width: auto !important;
+	padding-right: 30px;
+	padding-left: 30px;
+}
+/*** Card verticali ***/
+.card {
+	display: flex;
+	align-items: stretch;
+	margin-top: 10px;
+	margin-bottom: 3%;
+	width: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.one-card {
+	display: flex;
+	align-items: stretch;
+	margin-top: 10px;
+	margin-bottom: 3%;
+	width: 100%;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.text-card {
+	width: 55%;
+	background-color: #181E24;
+	padding: 40px 30px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+}
+.image-card {
+	width: 35%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+@media screen and (min-width:1100px) {
+	.text-card {
+		width: 60%;
+	}
+	.image-card {
+		width: 30%;
+	}
+}
+@media screen and (min-width:1200px) {
+	.text-card {
+		width: 65%;
+	}
+	.image-card {
+		width: 25%;
+	}
+}
+@media screen and (min-width:1300px) {
+	.card {
+		width: 49%;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.text-card {
+		width: 50%;
+	}
+	.image-card {
+		width: 50%;
+	}
+}
+@media screen and (min-width:1500px) {
+	.card {
+		width: 48%;
+	}
+}
+@media screen and (min-width:1700px) {
+	.one-card {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.text-card {
+		width: 55%;
+	}
+	.image-card {
+		width: 45%;
+	}
+}
+/********* Css valido solo per Homepage *********/
+/*** Header Homepage ***/
+#wrapper-header-homepage {
+    width: 100%;
+    height:80vh;
+    background-color: #0E0E0E;
+    background-image: url("images/homepage-header.jpg");
+    background-repeat: no-repeat;
+	background-size: contain;
+    background-position: center top;
+}
+@media screen and (min-width:1400px) {
+    #wrapper-header-homepage {
+        background-position: 85% center;
+    }
+}
+#container-header-homepage {
+    height:78vh;
+    margin-left: 60px;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+}
+@media screen and (min-width:1500px) {
+	#container-header-homepage {
+		margin-left: 120px;
+    	margin-right: 120px;
+	}
+}
+#video-trailer {
+	width: 58%;
+}
+/********* Css valido solo per Il film *********/
+/*** Secondary nav ***/
+#container-nav-secondary {
+	height: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+	margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button-secondary-nav {
+	margin-right: 5%;
+	width: 30%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 600;
+    font-size: 16px;
+	color: #080A0C;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	background-color: #73FF70;
+	border: 2px solid #73FF70;
+	border-radius: 8px;
+	transition: all 0.4s ease 0s;
+	display: inline-block;
+}
+.button-secondary-nav:last-child {
+	margin-right: 0px;
+}
+.button-secondary-nav:hover {
+	color: #73FF70;
+	text-decoration: underline;
+	background-color: #080A0C;
+	transition: all 0.4s ease 0s;
+}
+@media screen and (min-width:1500px) {
+	#container-nav-secondary {
+		margin-left: 120px;
+    	margin-right: 120px;
+	}
+}
+/*** Css generico pagina Il film ***/
+.container-section-ilfilm {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+/*** Immagini di sfondo delle card ***/
+#skerritt {
+	background-image: url("images/ilfilm-skerritt.jpg");
+	background-position: center top;
+}
+#weaver {
+	background-image: url("images/ilfilm-weaver.jpg");
+	background-position: center 30%;
+}
+#cartwright {
+	background-image: url("images/ilfilm-cartwright.jpg");
+	background-position: center top;
+}
+#stanton {
+	background-image: url("images/ilfilm-stanton.jpg");
+	background-size: 150%;
+	background-position: center top;
+}
+#hurt {
+	background-image: url("images/ilfilm-hurt.jpg");
+	background-position: right top;
+}
+#holm {
+	background-image: url("images/ilfilm-holm.jpg");
+	background-position: 40% top;
+}
+#kotto {
+	background-image: url("images/ilfilm-kotto.jpg");
+	background-position: 40% top;
+}
+#mother {
+	background-image: url("images/ilfilm-mother.jpg");
+	background-position: 60% top;
+}
+#badejo {
+	background-image: url("images/ilfilm-badejo.jpeg");
+	background-position: center top;
+}
+#scott {
+	background-image: url("images/ilfilm-scott.jpg");
+	background-position: 80% top;
+}
+#obannon {
+	background-image: url("images/ilfilm-obannon.jpg");
+	background-position: center top;
+}
+/*** Icona to top***/
+#myBtn {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 20px; /* Place the button at the bottom of the page */
+	right: 25px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: rgba(255,255,255,0); /* Set a background color */
+	color: #73FF70; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	border-radius: 30%; /* Rounded corners */
+	font-size: 24px;/* Increase font size */
+	font-weight: 600;
+}
+#myBtn:hover {
+	color: #BBFF70; /* Text color */
+ 	background-color: #181E24; /* Add a dark-grey background on hover */
+}
+/********* Css valido solo per Gallery *********/
+/*** Css Slideshow ***/
+/* Position the image container */
+.container-slideshow {
+  position: relative;
+	top: 15px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #FAFFF4;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+}
+/* Number text */
+.numbertext {
+	font-weight: 400;
+	color: #FAFFF4;
+	font-size: 12px;
+	padding: 15px 15px;
+	position: absolute;
+	top: 0;
+}
+/* Container for image text */
+.caption-container {
+	text-align: center;
+	background-color: #181E24;
+	padding: 15px;
+	color: #FAFFF4;
+	margin-bottom: 3px;
+}
+.caption-container p{
+	margin-bottom: 0px;
+}
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Six columns side by side */
+.column {
+	float: left;
+	width: 20%;
+}
+/* Add a transparency effect for thumnbail images */
+.demo {
+	opacity: 0.6;
+}
+.active,
+.demo:hover {
+	opacity: 1;
+}
+/*** Css Le clip del film ***/
+.video-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.video {
+	width: 40%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-right: 5%;
+	margin-left: 5%;
+}
+	
